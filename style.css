@@ -1,0 +1,159 @@
+/* professional theme */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.background {
+    background-image: url("boring background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+}
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+  
+.nav-links a {
+    text-decoration: none;
+    color: #11676a;
+    font-weight: 800;
+    font-size: large;
+    transition: color 0.3s ease;
+}
+  
+.nav-links a:hover {
+    color: #999;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 2rem;
+    background-color: azure;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content-box {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+}
+
+/* hamburger icon */
+.hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: #3f1616;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 10px;
+    right: -250px;
+    width: 210px;
+    height: 100%;
+    background-color: white;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+    z-index: 999;
+    max-width: 100vw;
+}
+
+.sidebar a {
+    padding: 12px 20px;
+    display: block;
+    color: #3f1616;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background-color: #f7c3cf;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #3f1616;
+    cursor: pointer;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+
+/* for mobile view */
+@media (max-width: 768px) {
+
+    .logo {
+        height: 60px;
+        width: 100px;
+        padding-right: 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+    }
+}
