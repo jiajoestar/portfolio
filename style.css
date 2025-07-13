@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'MotivationOfHearts';
+    src: url('MotivationOfHearts.ttf');
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('Monocraft.otf');
+}
+
 body {
     height: 100%;
     overflow-x: hidden;
@@ -56,6 +66,24 @@ nav {
   
 .nav-links a:hover {
     color: #999;
+}
+
+.theme-button {
+    color: #11676a;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.theme-button:hover {
+    color: #093839;
+}
+
+.personal-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .content-wrapper {
